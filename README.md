@@ -9,9 +9,9 @@ and re-written by 'ruby' to:
 ## Sample page
 
 * Admin page:
-  ![Admin page](/voting/blob/main/doc/admin-candidates-page-2.png?raw=true)
+  ![Admin page](/blob/main/doc/admin-candidates-page-2.png?raw=true)
 * Voting page:
-  ![Voting page](/voting/blob/main/doc/voting-page-2.png?raw=true)
+  ![Voting page](/blob/main/doc/voting-page-2.png?raw=true)
 
 # Prerequisites
 
