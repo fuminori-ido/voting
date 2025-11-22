@@ -35,9 +35,11 @@ Legend
       ```
 1. bundle install
    ```
+   $ bundle config set --local path 'vendor/bundle'
    $ bundle install
    ```
 1. Database preparation for development env:
+   1. install mysql (docker is good choice).
    1. create user and database:
       ```
       $ mysql -h [HOST] -u root -p
