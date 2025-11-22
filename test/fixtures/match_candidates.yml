@@ -1,0 +1,65 @@
+#= fest_2025_1_a
+fest_2025_1_a_mr_a:
+  match:      fest_2025_1_a
+  candidate:  mr_a
+
+fest_2025_1_a_mrs_b:
+  match:      fest_2025_1_a
+  candidate:  mrs_b
+
+fest_2025_1_a_miss_c:
+  match:      fest_2025_1_a
+  candidate:  miss_c
+
+fest_2025_1_a_deleted:
+  match:      fest_2025_1_a
+  candidate:  deleted
+
+#= fest_2025_1_b
+fest_2025_1_b_mr_a:
+  match:      fest_2025_1_b
+  candidate:  mr_a
+
+fest_2025_1_b_mrs_b:
+  match:      fest_2025_1_b
+  candidate:  mrs_b
+
+fest_2025_1_b_esq_d:
+  match:      fest_2025_1_b
+  candidate:  esq_d
+
+# = fest_2025_semi_final
+fest_2025_semi_final_mr_a:
+  match:      fest_2025_semi_final
+  candidate:  mr_a
+
+fest_2025_semi_final_mrs_b:
+  match:      fest_2025_semi_final
+  candidate:  mr_a
+
+deleted:
+  match:      fest_2025_1_a
+  candidate:  mr_a
+  deleted_at: 2025-04-05
+
+deleted_mr_a:
+  match:      deleted
+  candidate:  mr_a
+
+# = c(hard)
+#= fest_2025_1_a
+c_fest_2025_a_mr_a:
+  match:      c_fest_2025_a
+  candidate:  mr_a
+
+c_fest_2025_a_mrs_b:
+  match:      c_fest_2025_a
+  candidate:  mrs_b
+
+c_fest_2025_a_miss_c:
+  match:      c_fest_2025_a
+  candidate:  miss_c
+
+c_fest_2025_a_deleted:
+  match:      c_fest_2025_a
+  candidate:  deleted

@@ -1,0 +1,44 @@
+# = a ranking
+# == soft ranking
+rank_1:
+  rank_slot:  soft
+  name:       1st
+  weight:     10
+
+rank_2:
+  rank_slot:  soft
+  name:       2nd
+  weight:     5
+
+rank_3:
+  rank_slot:  soft
+  name:       3rd
+  weight:     3
+
+deleted:
+  rank_slot:  soft
+  name:       1st
+  weight:     10000
+  deleted_at: 2025-04-29
+
+# == hard ranking
+hard_rank_1:
+  rank_slot:  hard
+  name:       1st(hard)
+  weight:     100
+
+hard_rank_2:
+  rank_slot:  hard
+  name:       2nd(hard)
+  weight:     10
+
+hard_rank_3:
+  rank_slot:  hard
+  name:       3rd(hard)
+  weight:     1
+
+hard_deleted:
+  rank_slot:  hard
+  name:       1st(hard)
+  weight:     20000
+  deleted_at: 2025-07-19

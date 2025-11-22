@@ -1,0 +1,70 @@
+en:
+  activerecord:
+    models:
+      candidate:        Candidate
+      event:            Event
+      match:            Award
+      match_candidate:  Award x Candidate
+      rank_slot:        Promotion
+      rank:             Rank
+      stage:            Stage
+      tenant:           Tenant
+      user:             User
+      vote:             Vote
+    attributes:
+      common: &common
+        name:           Name
+      candidate:
+        <<: *common
+      event:
+        <<: *common
+      match:
+        event_id:       Event
+        <<: *common
+      match_candidate:
+        match_id:       Award
+        candidate_id:   Candidate
+        <<: *common
+      rank:
+        <<: *common
+        weight:         Point
+      stage:
+        <<: *common
+        available:      Available to Vote
+      tenant:
+        <<: *common
+  helpers:
+    submit:
+      create:           Save
+      update:           Save
+      vote:
+        create:         Vote!
+  text:
+    actions:            action
+    alreay_voted:       already voted
+    alreay_voted_thankyou:  Thank you
+    alreay_voted_thankyou2: for your vote!
+    alreay_voted_thankyou3: Please wait for the result.
+    available:          Available to vote?
+    back_to_edit:       Back to detail
+    back_to_index:      Back to list
+    duplicated:         duplicated
+    delete_all_votes:   Delete all voting data
+    destroy:            delete
+    edit:               detail
+    edit_rec:           '%{rec} edit'
+    errors_occured:     '%{num} errors'
+    name:               Name
+    new:                New
+    new_rec:            '%{rec} create'
+    n_th:               '%{n}-th'
+    order:              Order
+    show:               Detail
+    show_vote:          Voting Page QR
+    show_qr:            show QR
+    sign_in:            Login
+    stat:               Stat
+    successfully_saved: Saved successfully
+    try_another:        Try another login id or password
+    voted:              Voted!
+    vote_score:         Point

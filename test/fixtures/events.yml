@@ -1,0 +1,18 @@
+fest_2025:
+  tenant: a
+  name:   fest_2025
+
+fest_2026:
+  tenant: a
+  name:   fest_2026
+
+deleted:
+  tenant:     a
+  name:       (deleted)
+  deleted_at: 2025-04-05
+
+# = b
+b_fest_2025:
+  tenant: b
+  name:   b fest_2025
+

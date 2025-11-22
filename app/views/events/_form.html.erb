@@ -1,0 +1,8 @@
+<%= form_with(model: rec, class: "contents") do |form| %>
+  <%= render_messages(rec) %>
+  <%= v_text_field(form, rec, :name) %>
+
+  <div class="inline">
+    <%= form.submit class: v_button_class %>
+  </div>
+<% end %>

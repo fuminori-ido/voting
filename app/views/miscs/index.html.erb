@@ -1,0 +1,43 @@
+<% content_for :title, 'Miscs' %>
+
+<div class="w-full">
+  <% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-md inline-block" id="notice"><%= notice %></p>
+  <% end %>
+
+  <h2 class="text-2xl font-bold mb-4">voting results</h2>
+  <ul>
+    <% for match in @matches %>    
+      <li class="list-disc mb-3">
+        <h3 class="font-bold"><%= match.name %></h3>
+        <% if match.match_candidates.any? %>
+          <table class="text-md bg-white shadow-md rounded mb-4"">
+            <thead>
+              <tr>
+                <th><%= v_i18n('order')       %></th>
+                <th><%= v_i18n('name')        %></th>
+                <th><%= v_i18n('vote_score')  %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% Vote.score.where(matches: {id: match.id}).order(score: 'DESC', c: 'ASC').each.with_index do |entry, n| %>
+                <tr class="border-b hover:bg-cyan-200">
+                  <td class='text-right'><%= v_i18n('n_th', n: n + 1) %></td>
+                  <td                   ><%= entry.c %></td>
+                  <td class='text-right'><%= entry.score %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        <% else %>
+          Not yet voted.
+        <% end %>
+      </li>
+    <% end %>    
+  </ul>
+  <%= button_to(v_i18n('delete_all_votes'),
+                destroy_all_votes_miscs_path,
+                method: :delete,
+                class:  "rounded-md px-3.5 py-2.5 text-white bg-red-600 hover:bg-red-500 font-medium cursor-pointer",
+                data:   { turbo_confirm: "Are you sure?" }) %>
+</div>

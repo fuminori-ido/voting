@@ -1,0 +1,9 @@
+a:
+  name: a
+
+b:
+  name: b
+
+deleted:
+  name:       (deleted)
+  deleted_at: 2025-04-05

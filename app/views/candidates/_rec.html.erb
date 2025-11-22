@@ -1,0 +1,9 @@
+  <td class="px-3">
+    <% if !rec.avatar.file.nil? %>
+      <%= image_tag(thumb_candidate_path(rec),
+                    width: '50') %>
+    <% end %>
+  </td>
+  <td class="px-3">
+    <%= rec.name %>
+  </td>

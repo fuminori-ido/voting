@@ -1,0 +1,2 @@
+set :deploy_to,   "/home/app/voting-perf"
+server "voting-perf.example.com", user: "YOUR-NAME", roles: %w{app db web}

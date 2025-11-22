@@ -1,0 +1,21 @@
+# stage_a consists from fest_2025_1_a and fest_2025_1_b
+stage_a:
+  name:       stage_a
+  key:        stage_a
+  available:  true
+
+# stage_x consists from x_fest_2025_1
+stage_x:
+  name:       stage_x
+  key:        stage_x
+  available:  true
+
+stage_unavailable:
+  name:       stage_unavailable
+  key:        stage_unavailable
+  available:  false
+
+deleted:
+  name:       deleted
+  key:        deleted
+  deleted_at: 2025-07-21

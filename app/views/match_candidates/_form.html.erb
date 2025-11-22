@@ -1,0 +1,9 @@
+<%= form_with(model: rec, class: "contents") do |form| %>
+  <%= render_messages(rec) %>
+  <%= v_select(form, rec, :match_id,      Match.not_deleted.order(:name).map{|m| [m.name, m.id]}) %>
+  <%= v_select(form, rec, :candidate_id,  Candidate.not_deleted.order(:name).map{|c| [c.name, c.id]}) %>
+
+  <div class="inline">
+    <%= form.submit class: v_button_class %>
+  </div>
+<% end %>

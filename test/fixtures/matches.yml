@@ -1,0 +1,71 @@
+# = a
+
+fest_2025_1_a:
+  event:      fest_2025
+  stage:      stage_a
+  rank_slot:  soft
+  name:       '1st match court-a'
+
+fest_2025_1_b:
+  event:      fest_2025
+  stage:      stage_a
+  rank_slot:  soft
+  name:       '1st match court-b'
+
+fest_2025_semi_final:
+  event:      fest_2025
+  stage:      stage_unavailable
+  rank_slot:  soft
+  name:       'semi final match'
+
+fest_2025_final_match:
+  event:      fest_2025
+  stage:      stage_unavailable
+  rank_slot:  soft
+  name:       'final match'
+
+deleted:
+  event:      fest_2025
+  rank_slot:  soft
+  name:       (deleted)
+  deleted_at: 2025-04-05
+
+# = b
+
+x_fest_2025_1:
+  event:      b_fest_2025
+  stage:      stage_x
+  rank_slot:  soft
+  name:       'b 1st match'
+
+b_fest_2025_semi_final:
+  event:      b_fest_2025
+  stage:      stage_unavailable
+  rank_slot:  soft
+  name:       'b semi final match'
+
+b_fest_2025_final_match:
+  event:      b_fest_2025
+  stage:      stage_unavailable
+  rank_slot:  soft
+  name:       'b final match'
+
+# = c(hard)
+
+c_fest_2025_a:
+  event:      fest_2025
+  stage:      stage_a
+  rank_slot:  hard
+  name:       'c match-a'
+
+c_fest_2025_b:
+  event:      fest_2025
+  stage:      stage_unavailable
+  rank_slot:  hard
+  name:       'c match-b'
+
+c_fest_2025_deleted:
+  event:      fest_2025
+  rank_slot:  hard
+  name:       'c match(deleted)'
+  deleted_at: 2025-07-19

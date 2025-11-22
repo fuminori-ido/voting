@@ -1,0 +1,1 @@
+server "voting.example.com", user: "YOUR-NAME", roles: %w{app db web}

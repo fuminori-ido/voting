@@ -1,0 +1,16 @@
+  <td class="px-3">
+    <%= rec.available %>
+  </td>
+  <td class="px-3">
+    <%= rec.name %>
+  </td>
+  <td class="px-3">
+    <%= link_to(Vote.model_name.human + '!',
+                new_vote_url(key: rec.key),
+                class:  "text-blue-800 hover:underline")  %>
+  </td>
+  <td class="px-3">
+    <%= link_to(v_i18n('show_qr'),
+                show_vote_stage_path(rec),
+                class: "w-full sm:w-auto text-center mt-2 sm:mt-0 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium")  %>
+  </td>

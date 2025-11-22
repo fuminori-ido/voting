@@ -1,0 +1,70 @@
+ja:
+  activerecord:
+    models:
+      candidate:        参加者
+      event:            イベント
+      match:            部門
+      match_candidate:  部門x参加者
+      rank_slot:        企画
+      rank:             ランキング
+      stage:            会場
+      tenant:           テナント
+      user:             ユーザ
+      vote:             投票
+    attributes:
+      common: &common
+        name:           名前
+      candidate:
+        <<: *common
+      event:
+        <<: *common
+      match:
+        event_id:       イベント
+        <<: *common
+      match_candidate:
+        match_id:       部門
+        candidate_id:   参加者
+        <<: *common
+      rank:
+        <<: *common
+        weight:         ポイント
+      stage:
+        <<: *common
+        available:      投票受付中
+      tenant:
+        <<: *common
+  helpers:
+    submit:
+      create:           保存
+      update:           保存
+      vote:
+        create:         投票！
+  text:
+    actions:            アクション
+    alreay_voted:       投票済み
+    alreay_voted_thankyou:  ご投票
+    alreay_voted_thankyou2: ありがとうございました！
+    alreay_voted_thankyou3: 結果発表までお待ち下さい
+    available:          投票受付中?
+    back_to_edit:       詳細画面に戻る
+    back_to_index:      一覧に戻る
+    duplicated:         重複しています
+    delete_all_votes:   全投票データをクリアします
+    destroy:            削除
+    edit:               詳細
+    edit_rec:           '%{rec} 編集'
+    errors_occured:     '%{num}件のエラーが発生しました'
+    name:               名前
+    new:                追加
+    new_rec:            '%{rec} 新規作成'
+    n_th:               '%{n}位'
+    order:              順位
+    show:               参照
+    show_vote:          投票ページQR
+    show_qr:            QRコード表示
+    sign_in:            ログイン
+    stat:               集計
+    successfully_saved: 保存されました
+    try_another:        別の email かパスワードを試して下さい
+    voted:              投票しました！
+    vote_score:         ポイント

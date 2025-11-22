@@ -1,0 +1,12 @@
+  <td class="px-3">
+    <%= rec.event.name %>
+  </td>
+  <td class="px-3">
+    <%= rec.stage.name %>
+  </td>
+  <td class="px-3">
+    <%= link_to(rec.name, url_for(id: rec.id, action: 'show'), class: "w-full sm:w-auto px-3.5 py-2.5 hover:underline font-medium mx-0.5") %>
+  </td>
+  <td class="px-3">
+    <%= rec.rank_slot.name %>
+  </td>

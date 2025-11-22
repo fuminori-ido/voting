@@ -1,0 +1,10 @@
+<%= form_with(model: rec, class: "contents") do |form| %>
+  <%= render_messages(rec) %>
+  <%= v_check_box(    form, rec, :available) %>
+  <%= v_text_field(   form, rec, :name) %>
+  <%= v_text_field(   form, rec, :key) %>
+
+  <div class="inline">
+    <%= form.submit class: v_button_class %>
+  </div>
+<% end %>

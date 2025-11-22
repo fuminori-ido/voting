@@ -1,0 +1,19 @@
+voter_a_fest_2025_1_a_rank_1_mr_a:
+  user:             voter_a
+  point:            10
+  match_candidate:  fest_2025_1_a_mr_a
+
+voter_a_fest_2025_1_a_rank_2_mrs_b:
+  user:             voter_a
+  point:            5
+  match_candidate:  fest_2025_1_a_mrs_b
+
+voter_b_fest_2025_1_a_rank_1_mrs_b:
+  user:             voter_b
+  point:            10
+  match_candidate:  fest_2025_1_a_mrs_b
+
+voter_b_fest_2025_1_a_rank_2_miss_c:
+  user:             voter_b
+  point:            5
+  match_candidate:  fest_2025_1_a_miss_c

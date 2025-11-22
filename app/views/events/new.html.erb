@@ -1,0 +1,8 @@
+<% content_for :title, v_i18n('new_rec', rec: @rec.class.model_name.human) %>
+
+<div class="md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl"><%= v_i18n('new_rec', rec: @rec.class.model_name.human) %></h1>
+
+  <%= render "form", rec: @rec %>
+  <%= link_to_index(events_path) %>
+</div>

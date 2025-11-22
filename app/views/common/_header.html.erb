@@ -1,0 +1,29 @@
+<div class="bg-blue-500 p-2 rounded-t-lg">
+    <div class="flex justify-center space-x-4">
+      <%= top_menu_link_to(Tenant) %>
+      <%= top_menu_link_to(Event) %>
+      <%= top_menu_link_to(Candidate) %>
+      <%= top_menu_link_to(Stage) %>
+      <%= top_menu_link_to(RankSlot) %>
+
+      <%= top_menu_link_to(Match) %>
+      <%= top_menu_link_to(Rank) %>
+
+      <%= top_menu_link_to(MatchCandidate) %>
+
+      <%= top_menu_link_to(User) %>
+      <%=
+        if available_for?('miscs')
+          link_to(tag.i(class:  'fa-solid fa-gear fa-lg',
+                        style:  'display: inline-block; height: 1rem; width: 2rem;'),
+                  url_for(controller: 'miscs'),
+                  class: "px-2 py-2 text-white font-semibold border-b-4 border-blue-700 hover:bg-blue-700 focus:outline-none tab-button")
+        else
+          ''
+        end
+      %>
+      <% if !current_user.is_guest? %>
+        <%= button_to 'Logout', session_path, method: :delete, class: "text-white w-full rounded-md px-3.5 py-2.5 bg-blue-700 hover:bg-blue-800 font-medium cursor-pointer" %>
+      <% end %>
+    </div>
+</div>

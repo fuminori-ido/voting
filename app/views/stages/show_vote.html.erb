@@ -1,0 +1,9 @@
+<% content_for :title, v_i18n('qr_rec', rec: @rec.class.model_name.human) %>
+
+<div class="md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl mb-8"><%= @rec.name %> <%= v_i18n('show_vote') %></h1>
+
+  <%= qrcode_tag(new_vote_url(key: @rec.key, random: Time.now.strftime("%s"))) %>
+  <div class="mt-8"></div>
+  <%= link_to_index(stages_path) %>
+</div>

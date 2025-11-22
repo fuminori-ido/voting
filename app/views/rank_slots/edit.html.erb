@@ -1,0 +1,8 @@
+<% content_for :title, "Editing rank slot" %>
+
+<div class="md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl">Editing rank slot</h1>
+
+  <%= render "form", rec: @rec %>
+  <%= link_to_index(rank_slots_path) %>
+</div>

@@ -1,0 +1,2 @@
+module RankSlotsHelper
+end
