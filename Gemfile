@@ -44,7 +44,7 @@ gem "thruster", require: false
 
 gem 'carrierwave',  '~> 3.0'
 gem 'itamae'
-gem 'rails-i18n', '~> 8.0.0'
+gem 'rails-i18n', '~> 8.1.0'
 gem 'rqrcode',    '~> 3.0'
 
 group :development, :test do
